@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>ドーパミン電卓 (Dopamine Calculator) — Privacy Policy &amp; Support</title>
+  <meta name="description" content="How ドーパミン電卓 (Dopamine Calculator) handles information, FAQ and contact information.">
+  <link rel="alternate" hreflang="ja" href="./">
+  <link rel="alternate" hreflang="en" href="./index.en.html">
+  <style>
+    :root {
+      --bg: #f8f3ea; --card: #fffdf8; --ink: #3d3028; --sub: #7a6a5c; --line: #e6dccd;
+      --accent: #b86a24; --accent-soft: #f6e7d6; --focus: #2b6cb0;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #17151a; --card: #221f25; --ink: #f1ebe2; --sub: #b4a99c; --line: #3a3540;
+        --accent: #e9a25c; --accent-soft: #342a21; --focus: #8ab4f8; }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Segoe UI", Roboto, sans-serif;
+      font-size: 16px; line-height: 1.8; overflow-wrap: anywhere;
+    }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible, label:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+    .wrap { width: min(760px, 100%); margin: 0 auto; padding: 0 16px; }
+    .site-header { border-bottom: 1px solid var(--line); background: var(--card); }
+    .site-nav { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; min-height: 52px; padding: 8px 0; font-size: 14px; }
+    .site-nav a { text-decoration: none; font-weight: 600; }
+    .site-nav .home::before { content: "\2190\00a0"; }
+    .site-nav .lang { margin-left: auto; padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; }
+    .site-nav .lang:hover { background: var(--accent-soft); }
+    main { padding: 36px 0 56px; }
+    .page-header { margin-bottom: 28px; }
+    .eyebrow { margin: 0 0 4px; font-size: 15px; font-weight: 700; color: var(--accent); }
+    .eyebrow a { text-decoration: none; }
+    h1 { margin: 0; font-size: clamp(24px, 5.5vw, 32px); line-height: 1.3; }
+    .meta { margin: 10px 0 0; color: var(--sub); font-size: 14px; }
+    .lead { font-size: 17px; }
+    h2 { font-size: 20px; line-height: 1.4; margin: 44px 0 12px; padding-top: 20px; border-top: 1px solid var(--line); }
+    h3 { font-size: 17px; line-height: 1.5; margin: 28px 0 6px; }
+    p, ul, ol { margin: 0 0 1em; }
+    ul, ol { padding-left: 1.4em; }
+    li { margin: .3em 0; }
+    li > ul, li > ol { margin: .3em 0 .3em; }
+    strong { font-weight: 700; }
+    hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
+    table { border-collapse: collapse; width: 100%; margin: 0 0 1em; font-size: 15px; }
+    th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: var(--accent-soft); font-weight: 700; }
+    .box { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; margin: 0 0 1.4em; }
+    .box > :first-child { margin-top: 0; }
+    .box > :last-child { margin-bottom: 0; }
+    .box ul, .box ol { margin-bottom: 0; }
+    .notice { border-left: 4px solid var(--accent); background: var(--accent-soft); border-radius: 10px; padding: 12px 16px; margin: 0 0 28px; font-size: 14px; color: var(--ink); }
+    .notice p { margin: 0; }
+    .card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; margin: 0 0 14px; }
+    .card h2 { margin: 0 0 6px; padding: 0; border: 0; font-size: 19px; }
+    .card p { margin: 0 0 8px; color: var(--sub); }
+    .card p:last-child { margin: 0; }
+    .card a.more { font-weight: 700; text-decoration: none; }
+    .card a.more::after { content: "\00a0\2192"; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; margin: 0 0 1.4em; }
+    .gallery figure { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 8px; }
+    .gallery img { width: 100%; height: auto; border-radius: 8px; display: block; }
+    .gallery figcaption { font-size: 12px; color: var(--sub); text-align: center; margin-top: 6px; }
+    .site-footer { border-top: 1px solid var(--line); padding: 20px 0 48px; color: var(--sub); font-size: 14px; }
+    .site-footer nav { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 10px; }
+    .site-footer nav a { text-decoration: none; font-weight: 600; }
+    .site-footer p { margin: 0; }
+    @media (max-width: 480px) {
+      body { font-size: 15.5px; }
+      main { padding-top: 28px; }
+      h2 { margin-top: 36px; }
+      table { display: block; overflow-x: auto; }
+    }
+    @media print {
+      .site-header, .site-footer nav { display: none; }
+      body { background: #fff; color: #000; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav wrap" aria-label="Site">
+      <a class="home" href="https://shirai-aka.github.io/">All apps</a>
+      <a class="lang" href="./" lang="ja" hreflang="ja">日本語</a>
+    </nav>
+  </header>
+  <main class="wrap" id="main">
+    <article>
+      <header class="page-header">
+        <p class="eyebrow">ドーパミン電卓 (Dopamine Calculator)</p>
+        <h1>Privacy Policy &amp; Support</h1>
+      <p class="meta">Last updated: October 12, 2026 (app renamed)</p>
+      </header>
+<div class="notice" role="note"><p>This English page is a reference translation of the Japanese original, provided for convenience. The Japanese text is the official version; where the two differ, the Japanese text applies.</p></div>
+<p class="lead">ドーパミン電卓 (Dopamine Calculator; formerly 演出過剰電卓; the “App”) is a joke calculator app that adds far more flashy effects to an ordinary calculator than it needs. All calculation functions are performed entirely on the device, and no account registration is required.</p>
+
+    <h2 id="collect">1. Information Collected</h2>
+    <p>The App itself does not collect or transmit user information. The App’s program does not communicate with the developer’s server.</p>
+    <p>The only things the App stores on the device are the following settings.</p>
+    <ul>
+      <li>Effect intensity (“演出過剰度”, the overkill level)</li>
+      <li>Sound effect theme, sound effects on/off</li>
+      <li>Result effect theme</li>
+      <li>RGB lighting, vibration, confetti and rare effects on/off</li>
+    </ul>
+    <p>Calculated numbers and history are not stored.</p>
+
+    <h2 id="purpose">2. Purposes of Use</h2>
+    <p>The settings above are stored on the device solely so that the same settings can be used the next time the App is launched.</p>
+
+    <h2 id="third-party">3. Provision to Third Parties</h2>
+    <p>The App does not provide user data to third parties. However, the ad SDK described in “4. Third-Party SDKs and Advertising” below may obtain information for ad delivery.</p>
+
+    <h2 id="sdk">4. Third-Party SDKs and Advertising</h2>
+    <p>The App uses Google AdMob (Google Mobile Ads SDK) to display a banner ad at the bottom of the screen. No analytics tools or crash reporting SDKs are used.</p>
+    <p>The Google Mobile Ads SDK may obtain the following information for ad delivery, measurement and fraud prevention (these are the same items as declared in the App Store’s “App Privacy” section).</p>
+    <ul>
+      <li>Device ID</li>
+      <li>Product interaction</li>
+      <li>Advertising data</li>
+      <li>Coarse location</li>
+      <li>Crash data</li>
+      <li>Performance data</li>
+      <li>Other diagnostic data</li>
+    </ul>
+    <p>The App requests ads as <strong>non-personalized ads</strong> and does not show the iOS “Allow tracking” (ATT) dialog. For details on how advertising data is handled, please see Google’s Privacy Policy (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>) and Google’s Ads Settings (<a href="https://adssettings.google.com/">https://adssettings.google.com/</a>).</p>
+
+    <h2 id="permissions">5. Device Permissions</h2>
+    <p>The App does not request permissions such as location, contacts, photos, camera, microphone or notifications.<br>(If a new permission becomes necessary in a future version, this policy will be updated and the change announced on this page.)</p>
+
+    <h2 id="data">6. Data Management and Deletion</h2>
+    <ul>
+      <li>The App’s settings are included in the iPhone’s standard backup (iCloud Backup or a backup to a computer) in the same way as other apps’ data. The developer cannot access them.</li>
+      <li>If you uninstall the App, the settings stored on the device are deleted. This cannot be undone.</li>
+    </ul>
+
+    <h2 id="support">7. Support &amp; FAQ</h2>
+
+    <h3>Can I turn off the effects and use it as an ordinary calculator?</h3>
+    <p>Yes. Tap the gear at the top right → set “演出過剰度” (Overkill level) to “普通” (Normal). Vibration, confetti, sound effects and RGB lighting can also be turned off individually.</p>
+
+    <h3>The sound effects don’t play</h3>
+    <p>The App’s sound effects follow silent mode (the silent switch). Turn off silent mode, or check that Settings → Sound effects → “効果音を鳴らす” (Play sound effects) is turned on.</p>
+
+    <h3>It takes a while for the result to appear after I press “=”</h3>
+    <p>This is by design. The result announcement effect takes a few seconds (about 4–5 seconds at “かなり過剰” (Quite excessive), about 7–8 seconds at “限界突破” (Beyond the limit)). Pressing another key during the effect cuts it short and shows the result. If you are in a hurry, set “演出過剰度” (Overkill level) to “普通” (Normal).</p>
+
+    <h3>I am sensitive to flashing lights</h3>
+    <p>Set “演出過剰度” (Overkill level) to “普通” (Normal) or “ちょっと過剰” (A little excessive). Turning on iOS Settings → Accessibility → Motion → “Reduce Motion” suppresses flashes, screen shaking and rapid lighting.</p>
+
+    <h3>It’s just 1 + 1, so why is it this flashy?</h3>
+    <p>That is the point of this app. The size of the result has nothing to do with how flashy the effects are.</p>
+
+    <h3>I found a bug</h3>
+    <p>Please let us know at the email address below. Where possible, it helps if you include your iPhone model, iOS version, App version (shown under Settings → About this app), what happened and what you did just before.</p>
+
+    <h2 id="contact">8. Contact</h2>
+    <p>For inquiries about this policy or the App, please contact the email address below.</p>
+    <ul>
+      <li>Email: <a href="mailto:shirai.apps@ymail.ne.jp">shirai.apps@ymail.ne.jp</a></li>
+    </ul>
+
+    <h2 id="revisions">9. Revisions</h2>
+    <p>This policy is revised as necessary. Revisions will be published on this page.</p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav aria-label="Pages"><a href="./index.en.html">Privacy Policy</a><a href="./index.en.html#support">Support &amp; FAQ</a></nav>
+      <p>Contact: <a href="mailto:shirai.apps@ymail.ne.jp">shirai.apps@ymail.ne.jp</a> · © Raimu Okano</p>
+    </div>
+  </footer>
+</body>
+</html>
