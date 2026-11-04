@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>ドーパミン電卓 プライバシーポリシー・サポート</title>
+  <meta name="description" content="ドーパミン電卓における情報の取り扱いと、よくある質問・お問い合わせ先。">
+  <link rel="alternate" hreflang="en" href="./index.en.html">
+  <link rel="alternate" hreflang="ja" href="./">
+  <style>
+    :root {
+      --bg: #f8f3ea; --card: #fffdf8; --ink: #3d3028; --sub: #7a6a5c; --line: #e6dccd;
+      --accent: #b86a24; --accent-soft: #f6e7d6; --focus: #2b6cb0;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #17151a; --card: #221f25; --ink: #f1ebe2; --sub: #b4a99c; --line: #3a3540;
+        --accent: #e9a25c; --accent-soft: #342a21; --focus: #8ab4f8; }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Segoe UI", Roboto, sans-serif;
+      font-size: 16px; line-height: 1.8; overflow-wrap: anywhere;
+    }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible, label:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+    .wrap { width: min(760px, 100%); margin: 0 auto; padding: 0 16px; }
+    .site-header { border-bottom: 1px solid var(--line); background: var(--card); }
+    .site-nav { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; min-height: 52px; padding: 8px 0; font-size: 14px; }
+    .site-nav a { text-decoration: none; font-weight: 600; }
+    .site-nav .home::before { content: "\2190\00a0"; }
+    .site-nav .lang { margin-left: auto; padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; }
+    .site-nav .lang:hover { background: var(--accent-soft); }
+    main { padding: 36px 0 56px; }
+    .page-header { margin-bottom: 28px; }
+    .eyebrow { margin: 0 0 4px; font-size: 15px; font-weight: 700; color: var(--accent); }
+    .eyebrow a { text-decoration: none; }
+    h1 { margin: 0; font-size: clamp(24px, 5.5vw, 32px); line-height: 1.3; }
+    .meta { margin: 10px 0 0; color: var(--sub); font-size: 14px; }
+    .lead { font-size: 17px; }
+    h2 { font-size: 20px; line-height: 1.4; margin: 44px 0 12px; padding-top: 20px; border-top: 1px solid var(--line); }
+    h3 { font-size: 17px; line-height: 1.5; margin: 28px 0 6px; }
+    p, ul, ol { margin: 0 0 1em; }
+    ul, ol { padding-left: 1.4em; }
+    li { margin: .3em 0; }
+    li > ul, li > ol { margin: .3em 0 .3em; }
+    strong { font-weight: 700; }
+    hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
+    table { border-collapse: collapse; width: 100%; margin: 0 0 1em; font-size: 15px; }
+    th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: var(--accent-soft); font-weight: 700; }
+    .box { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; margin: 0 0 1.4em; }
+    .box > :first-child { margin-top: 0; }
+    .box > :last-child { margin-bottom: 0; }
+    .box ul, .box ol { margin-bottom: 0; }
+    .notice { border-left: 4px solid var(--accent); background: var(--accent-soft); border-radius: 10px; padding: 12px 16px; margin: 0 0 28px; font-size: 14px; color: var(--ink); }
+    .notice p { margin: 0; }
+    .card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; margin: 0 0 14px; }
+    .card h2 { margin: 0 0 6px; padding: 0; border: 0; font-size: 19px; }
+    .card p { margin: 0 0 8px; color: var(--sub); }
+    .card p:last-child { margin: 0; }
+    .card a.more { font-weight: 700; text-decoration: none; }
+    .card a.more::after { content: "\00a0\2192"; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; margin: 0 0 1.4em; }
+    .gallery figure { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 8px; }
+    .gallery img { width: 100%; height: auto; border-radius: 8px; display: block; }
+    .gallery figcaption { font-size: 12px; color: var(--sub); text-align: center; margin-top: 6px; }
+    .site-footer { border-top: 1px solid var(--line); padding: 20px 0 48px; color: var(--sub); font-size: 14px; }
+    .site-footer nav { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 10px; }
+    .site-footer nav a { text-decoration: none; font-weight: 600; }
+    .site-footer p { margin: 0; }
+    @media (max-width: 480px) {
+      body { font-size: 15.5px; }
+      main { padding-top: 28px; }
+      h2 { margin-top: 36px; }
+      table { display: block; overflow-x: auto; }
+    }
+    @media print {
+      .site-header, .site-footer nav { display: none; }
+      body { background: #fff; color: #000; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav wrap" aria-label="サイト">
+      <a class="home" href="https://shirai-aka.github.io/">アプリ一覧</a>
+      <a class="lang" href="./index.en.html" lang="en" hreflang="en">English</a>
+    </nav>
+  </header>
+  <main class="wrap" id="main">
+    <article>
+      <header class="page-header">
+        <p class="eyebrow">ドーパミン電卓</p>
+        <h1>プライバシーポリシー・サポート</h1>
+      <p class="meta">最終更新日: 2026年10月12日（アプリ名を変更）</p>
+      </header>
+<p class="lead">ドーパミン電卓（旧名: 演出過剰電卓。以下「本アプリ」）は、ふつうの電卓に必要以上に派手な演出をつけたネタ系電卓アプリです。計算機能はすべて端末内で完結し、アカウント登録は不要です。</p>
+
+    <h2 id="collect">1. 収集する情報</h2>
+    <p>本アプリ自身は、ユーザーの情報を収集・送信しません。本アプリのプログラムは、開発者のサーバーとの通信を行いません。</p>
+    <p>本アプリが端末内に保存するのは、次の設定だけです。</p>
+    <ul>
+      <li>演出の強さ（演出過剰度）</li>
+      <li>効果音のテーマ、効果音のオン／オフ</li>
+      <li>結果演出のテーマ</li>
+      <li>RGB発光、振動、紙吹雪、レア演出のオン／オフ</li>
+    </ul>
+    <p>計算した数値や履歴は保存しません。</p>
+
+    <h2 id="purpose">2. 情報の利用目的</h2>
+    <p>上記の設定は、次回起動時に同じ設定で使えるようにするためだけに、端末内に保存します。</p>
+
+    <h2 id="third-party">3. 第三者提供</h2>
+    <p>本アプリは、ユーザーのデータを第三者に提供しません。ただし、次の「4. 外部SDK・広告」に記載の広告SDKが、広告配信のために情報を取得することがあります。</p>
+
+    <h2 id="sdk">4. 外部SDK・広告</h2>
+    <p>本アプリは、画面下部にバナー広告を表示するために Google AdMob（Google Mobile Ads SDK）を利用しています。解析ツール（Analytics）やクラッシュレポートSDKは使用していません。</p>
+    <p>Google Mobile Ads SDK は、広告の配信・計測・不正防止のために、次の情報を取得することがあります（App Store の「Appのプライバシー」の申告と同じ項目です）。</p>
+    <ul>
+      <li>デバイスID</li>
+      <li>製品の操作</li>
+      <li>広告データ</li>
+      <li>おおよその場所</li>
+      <li>クラッシュデータ</li>
+      <li>パフォーマンスデータ</li>
+      <li>その他の診断データ</li>
+    </ul>
+    <p>本アプリは、広告を<strong>非パーソナライズ広告</strong>として要求し、iOS の「Appからのトラッキング要求」（ATT）ダイアログは表示しません。広告に関するデータの取り扱いの詳細は、Google のプライバシーポリシー（<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>）および Google の広告設定（<a href="https://adssettings.google.com/">https://adssettings.google.com/</a>）をご覧ください。</p>
+
+    <h2 id="permissions">5. 端末の権限</h2>
+    <p>本アプリは、位置情報、連絡先、写真、カメラ、マイク、通知等の権限を要求しません。<br>（将来のバージョンで新たな権限が必要となった場合は、本ポリシーを更新し、本ページにて告知します。）</p>
+
+    <h2 id="data">6. データの管理と削除</h2>
+    <ul>
+      <li>本アプリの設定は、iPhone の標準バックアップ（iCloud バックアップ、またはコンピュータへのバックアップ）に他のアプリのデータと同じように含まれます。開発者はアクセスできません。</li>
+      <li>本アプリをアンインストールすると、端末内に保存された設定は削除されます。この操作は取り消せません。</li>
+    </ul>
+
+    <h2 id="support">7. サポート・よくある質問</h2>
+
+    <h3>演出を止めて、ふつうの電卓として使えますか？</h3>
+    <p>使えます。右上の歯車 → 「演出過剰度」を「普通」にしてください。振動・紙吹雪・効果音・RGB発光は個別にオフにもできます。</p>
+
+    <h3>効果音が鳴りません</h3>
+    <p>本アプリの効果音はマナーモード（消音スイッチ）に従います。マナーモードを解除するか、設定 → 効果音 → 「効果音を鳴らす」がオンになっているか確認してください。</p>
+
+    <h3>「＝」を押したあと結果が出るまで時間がかかります</h3>
+    <p>仕様です。結果発表の演出に数秒かかります（「かなり過剰」で約4〜5秒、「限界突破」で約7〜8秒）。演出中に別のキーを押すと打ち切って結果を表示します。急ぐときは「演出過剰度」を「普通」にしてください。</p>
+
+    <h3>光の点滅が苦手です</h3>
+    <p>「演出過剰度」を「普通」または「ちょっと過剰」にしてください。iOS の設定 → アクセシビリティ → 動作 → 「視差効果を減らす」をオンにすると、フラッシュ・画面の揺れ・高速な発光を抑えます。</p>
+
+    <h3>1 + 1 なのに、なぜこんなに派手なのですか？</h3>
+    <p>このアプリの趣旨です。計算結果の大きさと演出の派手さは無関係です。</p>
+
+    <h3>不具合を見つけました</h3>
+    <p>下記のメールアドレスまでお知らせください。可能な範囲で、iPhone の機種、iOS のバージョン、アプリのバージョン（設定 → このアプリについて に表示）、起きたことと直前の操作を添えていただけると助かります。</p>
+
+    <h2 id="contact">8. お問い合わせ</h2>
+    <p>本ポリシーおよび本アプリに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+    <ul>
+      <li>メール：<a href="mailto:shirai.apps@ymail.ne.jp">shirai.apps@ymail.ne.jp</a></li>
+    </ul>
+
+    <h2 id="revisions">9. 改定</h2>
+    <p>本ポリシーは必要に応じて改定されます。改定後は本ページにて公開します。</p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav aria-label="ページ"><a href="./">プライバシーポリシー</a><a href="./#support">サポート・よくある質問</a></nav>
+      <p>お問い合わせ: <a href="mailto:shirai.apps@ymail.ne.jp">shirai.apps@ymail.ne.jp</a> · © Raimu Okano</p>
+    </div>
+  </footer>
+</body>
+</html>
